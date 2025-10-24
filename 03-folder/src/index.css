@@ -46,12 +46,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-.Card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 button:hover {
   border-color: #646cff;
 }
@@ -71,4 +65,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.Card {
+  width: 300px;
+  padding: 20px;
+  border:1px solid white;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #333;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap:wrap ;
+}
+.Card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
