@@ -1,0 +1,255 @@
+body{
+    background-color: #070644;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    /* padding: 20px; */
+    overflow-x: hidden;
+}
+h3{
+    font-family: Arial, sans-serif;
+    padding: 0px 40px;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+
+}
+.header {
+    position: relative; 
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    background-image: url("images/markus-spiske-MI9-PY5cyNs-unsplash.jpg");
+    width: 100vw;
+    background-position: center;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar ul{
+    position: absolute;
+    gap: 43px;
+    display: flex;
+    list-style: none;
+    padding: 20px 40px;
+    margin: 0;
+    top: 0px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    
+}
+.navbar ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #00c3ff;
+}
+.search-bar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 15px;
+}
+
+form {
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all 1s;
+width: 50px;
+height: 50px;
+background: white;
+box-sizing: border-box;
+border-radius: 25px;
+border: 4px solid white;
+padding: 5px;
+}
+
+
+input{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 42.5px;
+line-height: 30px;
+outline: 0;
+border: 0;
+display: none;
+font-size: len;
+border-radius: 20px;
+padding: 20px;
+}
+
+.fa{
+box-sizing: border-box;
+padding: 10px;
+width: 42.5px;
+height: 42.5px;
+
+top: 0;
+right: 0;
+border-radius: 50%;
+color: #f8f8fa;
+text-align: center;
+font-size: 1.2em;
+transform: all 0.3s;
+}
+
+form:hover {
+width: 300px;
+cursor: pointer;
+}
+form:hover input {
+display: block;
+}
+form:hover .fa {
+background: #8c52ff;
+
+}
+
+.social-media{
+    padding: 110px 0px 6px 43px;
+    display: flex;
+    right: 0;
+    gap: 20px;
+    
+}
+.about{
+    padding: 0px 0px 6px 43px;
+    margin: 0 px;
+
+    
+
+}
+#highlight{
+    color: #00c3ff;
+    margin-top: 20px;
+}
+.btn{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #00c3ff;
+    border: 2px solid #00c3ff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.btn:hover{
+    background-color: #00c3ff;
+    color: #070644;
+}
+.play-button{
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 0px 0px 0px 20px;
+    margin: -20px 0px;
+    background-color: var(--dark-blue);
+    
+border: none;
+border-radius: 50%; 
+ box-shadow: 4px 4px 10px rgba(7, 56, 113, 0.3); /
+
+}
+.play-button:hover{
+    transform: scale(1.1);
+}
+.upbody{
+    position: relative;
+}
+.services{
+    
+    padding: 0px 0px 10px 43px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tn{
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translateX(-50%);
+    background-color: #00c3ff;
+    color: #070644;
+    border: none;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.tn:hover{
+    background-color: #070644;
+    color: #00c3ff;
+}
+
+.containers{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap: px;
+    padding: 10px;
+    margin: 0px 0px 0px 40px;
+} 
+
+
+
+.box{
+    background-color: #070644;
+    color: #ffffff;
+    padding: 20px;
+    border: 2px solid #3c6976; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(198, 161, 161, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    width: 295px;
+    padding: 20px;
+    margin-left: 40px;
+
+}
+.footer{
+    background-color: #0d1222;
+    padding: 80px 0; 
+    display: flex; 
+    align-items: flex-start;
+    justify-content: start;
+    gap: 40px;
+}
+.footer-content{
+    flex: 1; 
+    max-width: 600px;
+    color: #fff;  
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.about-us{
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
